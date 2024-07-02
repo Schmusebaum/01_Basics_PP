@@ -38,5 +38,6 @@ test = "hi"; // Wertzuweisung (Initialisierung)
 test = "hello"; // Überschreiben
 console.log("Inhalt: " + test); // Ausgabe 
 
-const test2 = "Hi!";
-console.log(test2);
+const test2 = "Hi!"; //Deklaration + Wertzuweisung gemeinsam!
+test2 = "hello"; // Laufzeit-Fehler !!
+console.log("Inhalt " + test2); Ausgabe
