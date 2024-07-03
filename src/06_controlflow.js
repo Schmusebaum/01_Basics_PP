@@ -68,7 +68,7 @@ else
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
- const firstName = "Jane";
+/* const firstName = "Jane";
  let job;
 
  //job = "driver";  // .. fährt TAXI! / UBER
@@ -99,3 +99,22 @@ switch (job) {
         console.log(firstName + " .. macht etwas anderes!");
         break;
 }
+        */
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const value = 10;
+
+switch (cond) {
+    case (value == 1):
+        console.log("Value hat den Wert 1.");
+        break;
+    case (value == 2):
+        console.log("Value hat den Wert 2.");
+        break;
+    default:
+        console.log("Value hat einen anderen Wert.");
+        break;
+}
+
