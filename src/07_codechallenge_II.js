@@ -22,23 +22,23 @@ let name =  prompt("Name: ") ;
 let alter = prompt("Alter: ") ;
 
 let milch = alter >= 0 && alter < 6
-let Saft = alter > 5 && alter < 13 
-let Cola = alter > 12 && alter < 18
-let Wein = alter > 17 
+let saft = alter > 5 && alter < 13 
+let cola = alter > 12 && alter < 18
+
 
 if ( milch)
  {
     console.log(name + " trinkt Milch")
 } 
-else if (Saft)
+else if (saft)
 {
-    console.log(name + " trinkt Saft")
+    console.log(name + " trinkt Milch oderSaft")
 }
-else if (Cola)
+else if (cola)
 {
-    console.log(name + " trinkt Cola")
+    console.log(name + " trinkt Milch, Saft oder Cola")
 }
 else 
 {
-    console.log(name + " trinkt Wein")
+    console.log(name + " trinkt Milch, Saft, Cola oder Wein")
 }
