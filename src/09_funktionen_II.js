@@ -11,6 +11,38 @@
 */
 
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich"
+const ERROR_STR_GEN = "Irgendwas ging schief!";
+
+
+ //module: calculator | tests:
+ //agreement : "+","-","*",":","/"
+ output(calculator(3,2,"+"));
+ output(calculator(3,2,"-"));
+ output(calculator(3,2,"*"));
+ output(calculator(3,2,":"));
+ output(calculator(3,2,"/"));
+ output(calculator(3,0,"/"));
+ output(calculator(3,2,"#?!"));
+
+
+function calculator(a,b,op) // Was soll gemacht werden?...
+{
+switch (op) 
+	{
+	case "+": 
+		return add(a,b);  //Addition
+	case "-": 
+		return subtract(a,b); //Subtraktion
+	case "*": 
+		return multiply(a,b); // Multiplikation
+	case "/": 
+	case ":":	
+		return divide(a,b); // Division
+	default:
+		return ERROR_STR_GEN;
+	}	
+}
+// Wie sollen die Aufgaben gelöst werden?
 
 //module: addition a + b |  test:
 //output(add(2,2));
@@ -41,10 +73,10 @@ function multiply(a,b) {
 // output(divide(3,-2));
 // output(divide(0,2));
 // output(divide(3,0));
- output(divide(0,0));
+// output(divide(0,0));
 
 function divide(a,b)
- {
+{
 	if (b==0) 
 		{
 		return ERROR_STR_DIV; //Ausnahme
