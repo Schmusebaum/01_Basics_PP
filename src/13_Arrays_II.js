@@ -2,7 +2,7 @@
 
 // push() / pop()
 // push --> Daten rein ... (+)
-// let arr = [];
+ let arr = [];
 
 // output(arr);
 // arr.push("Ich");
@@ -63,7 +63,7 @@ const TAB_STR = "\t";
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-//output(getHTML());
+output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
